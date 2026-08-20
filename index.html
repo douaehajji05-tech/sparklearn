@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SparkLearn | Learn. Share. Succeed.</title>
+    <meta name="description" content="SparkLearn is a modern educational platform where students can access exams, resources, scholarships, reports, vocabulary, and weekly exercises.">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="navbar" id="navbar"></header>
+
+<main>
+
+<section class="hero">
+
+    <div class="container hero-content">
+
+        <div class="hero-left">
+
+            <h1>Your Gateway to <span class="text-primary">Engineering Excellence</span></h1>
+
+            <p>
+                Access past exams, resources, scholarships
+                and essential tools to succeed.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="resources.html" class="btn">
+                    <i class="fa-solid fa-book-open"></i> Explore Resources <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="exams.html" class="btn secondary">
+                    <i class="fa-solid fa-book"></i> View Exams
+                </a>
+
+            </div>
+
+            <div class="hero-stats">
+
+                <div class="stat">
+                    <i class="fa-solid fa-book-open"></i>
+                    <div>
+                        <h3>5+</h3>
+                        <p>Years</p>
+                    </div>
+                </div>
+
+                <div class="stat">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <div>
+                        <h3>200+</h3>
+                        <p>PDFs</p>
+                    </div>
+                </div>
+
+                <div class="stat">
+                    <i class="fa-regular fa-folder-open"></i>
+                    <div>
+                        <h3>10+</h3>
+                        <p>Categories</p>
+                    </div>
+                </div>
+
+                <div class="stat">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <div>
+                        <h3>100%</h3>
+                        <p>Free Access</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="hero-right">
+            <img src="assets/illustrations/hero.svg" alt="Graduation cap on a stack of books">
+        </div>
+
+    </div>
+
+</section>
+
+<section class="home-panel">
+
+    <div class="container">
+
+        <div class="content-card">
+
+            <div class="panel-block">
+
+                <div class="panel-header">
+                    <span class="panel-icon announcements-icon"><i class="fa-solid fa-bullhorn"></i></span>
+                    <div>
+                        <h2>Latest Announcements</h2>
+                        <p>Important updates and new content published by the instructor.</p>
+                    </div>
+                </div>
+
+                <div id="announcement-mount">
+                    <p class="empty-state">
+                        <i class="fa-regular fa-bell"></i> No announcements available yet.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="panel-block">
+
+                <div class="panel-header">
+                    <span class="panel-icon quick-icon"><i class="fa-solid fa-rocket"></i></span>
+                    <div>
+                        <h2>Quick Access</h2>
+                        <p>Jump directly to the most important sections.</p>
+                    </div>
+                </div>
+
+                <div class="quick-grid">
+
+                    <a href="exams.html" class="quick-card quick-blue">
+                        <span class="quick-icon-circle"><i class="fa-solid fa-file-lines"></i></span>
+                        <h3>Exams</h3>
+                        <p>Past exams and corrections.</p>
+                        <i class="fa-solid fa-arrow-right quick-arrow"></i>
+                    </a>
+
+                    <a href="vocabulary.html" class="quick-card quick-green">
+                        <span class="quick-icon-circle"><i class="fa-solid fa-book-open"></i></span>
+                        <h3>Vocabulary</h3>
+                        <p>Engineering terminology and glossaries.</p>
+                        <i class="fa-solid fa-arrow-right quick-arrow"></i>
+                    </a>
+
+                    <a href="resources.html" class="quick-card quick-purple">
+                        <span class="quick-icon-circle"><i class="fa-solid fa-layer-group"></i></span>
+                        <h3>Resources</h3>
+                        <p>Learning materials and references.</p>
+                        <i class="fa-solid fa-arrow-right quick-arrow"></i>
+                    </a>
+
+                    <a href="scholarships.html" class="quick-card quick-orange">
+                        <span class="quick-icon-circle"><i class="fa-solid fa-graduation-cap"></i></span>
+                        <h3>Scholarships</h3>
+                        <p>Academic opportunities and programs.</p>
+                        <i class="fa-solid fa-arrow-right quick-arrow"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer class="footer" id="footer"></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase.js"></script>
+<script src="js/data.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

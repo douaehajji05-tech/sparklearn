@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exams & Corrections | SparkLearn</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="navbar" id="navbar"></header>
+
+<main>
+
+<section class="hero">
+
+<div class="container">
+
+<h1>Exams & Corrections</h1>
+
+<p>
+Browse previous exams together with their correction PDFs, organized for quick access.
+</p>
+
+</div>
+
+</section>
+<section class="exam-library">
+<div class="container">
+
+    <div class="exam-filters">
+
+        <input
+            type="text"
+            placeholder="Search an exam..."
+        >
+
+        <select>
+
+            <option>All Academic Years</option>
+            <option>2025-2026</option>
+            <option>2024-2025</option>
+            <option>2023-2024</option>
+
+        </select>
+
+        <select>
+
+            <option>All Semesters</option>
+            <option>Semester 1</option>
+            <option>Semester 2</option>
+
+        </select>
+
+    </div>
+
+</div>
+
+        <div class="section-header">
+            <h2>Exam Library</h2>
+            <p>
+                Browse previous exams and download their correction files.
+            </p>
+        </div>
+<div class="year-grid">
+
+    <details class="year-card" open>
+        <summary>Year 1</summary>
+
+        <details class="semester-card">
+            <summary>Semester 1</summary>
+            <div class="file-list-mount" data-category="exams" data-year="1" data-semester="1">
+                <p class="empty-state">No files available yet.</p>
+            </div>
+       </details>
+
+        <details class="semester-card">
+            <summary>Semester 2</summary>
+            <div class="file-list-mount" data-category="exams" data-year="1" data-semester="2">
+                <p class="empty-state">No files available yet.</p>
+            </div>
+        </details>
+    </details>
+
+    <details class="year-card" open>
+        <summary>Year 2</summary>
+
+        <details class="semester-card">
+            <summary>Semester 1</summary>
+            <div class="file-list-mount" data-category="exams" data-year="2" data-semester="1">
+                <p class="empty-state">No files available yet.</p>
+            </div>
+        </details>
+
+        <details class="semester-card">
+            <summary>Semester 2</summary>
+            <div class="file-list-mount" data-category="exams" data-year="2" data-semester="2">
+                <p class="empty-state">No files available yet.</p>
+            </div>
+        </details>
+    </details>
+
+    <details class="year-card" open>
+        <summary>Year 3</summary>
+
+        <details class="semester-card">
+            <summary>Semester 1</summary>
+            <div class="file-list-mount" data-category="exams" data-year="3" data-semester="1">
+                <p class="empty-state">No files available yet.</p>
+            </div>
+        </details>
+
+        <details class="semester-card">
+            <summary>Semester 2</summary>
+            <div class="file-list-mount" data-category="exams" data-year="3" data-semester="2">
+                <p class="empty-state">No files available yet.</p>
+            </div>
+        </details>
+    </details>
+
+    <details class="year-card" open>
+        <summary>Year 4</summary>
+
+        <details class="semester-card">
+            <summary>Semester 1</summary>
+            <div class="file-list-mount" data-category="exams" data-year="4" data-semester="1">
+                <p class="empty-state">No files available yet.</p>
+            </div>
+        </details>
+
+        <details class="semester-card">
+            <summary>Semester 2</summary>
+            <div class="file-list-mount" data-category="exams" data-year="4" data-semester="2">
+                <p class="empty-state">No files available yet.</p>
+            </div>
+        </details>
+    </details>
+
+    <details class="year-card" open>
+        <summary>Year 5</summary>
+
+        <details class="semester-card">
+            <summary>Semester 1</summary>
+            <div class="file-list-mount" data-category="exams" data-year="5" data-semester="1">
+                <p class="empty-state">No files available yet.</p>
+            </div>
+        </details>
+
+        <details class="semester-card">
+            <summary>Semester 2</summary>
+            <div class="file-list-mount" data-category="exams" data-year="5" data-semester="2">
+                <p class="empty-state">No files available yet.</p>
+            </div>
+        </details>
+    </details>
+
+</div>
+    </div>
+
+</section>
+<section class="featured-exam">
+
+    <div class="container">
+
+        <div class="featured-card">
+
+            <div class="featured-content">
+
+                <span class="featured-label">Featured</span>
+
+                <h2>Most Recent Exam</h2>
+
+                <p>
+                    Access the latest English for Engineers final exam together with its official correction and practice material.
+                </p>
+
+                <a href="#" class="btn">
+                    Download PDF
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+</main>
+
+<footer class="footer" id="footer"></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/files.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

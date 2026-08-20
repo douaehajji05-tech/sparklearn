@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 480" role="img" aria-label="Graduation cap on a stack of books, with a plant and a pen cup">
+
+  <circle cx="250" cy="245" r="205" fill="#EAF1FF"/>
+
+  <circle cx="432" cy="62" r="22" fill="none" stroke="#A9C0FF" stroke-width="3"/>
+  <circle cx="62" cy="252" r="10" fill="#C7D6FF"/>
+  <circle cx="82" cy="92" r="26" fill="none" stroke="#C7D6FF" stroke-width="3"/>
+
+  <path d="M410,110 Q412,122 424,124 Q412,126 410,138 Q408,126 396,124 Q408,122 410,110 Z" fill="#F4B740"/>
+  <path d="M452,172 Q453,179 460,180 Q453,181 452,188 Q451,181 444,180 Q451,179 452,172 Z" fill="#F4B740"/>
+
+  <ellipse cx="105" cy="392" rx="42" ry="10" fill="#DCE6FA"/>
+  <polygon points="72,340 138,340 130,392 80,392" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+  <rect x="98" y="330" width="10" height="14" fill="#8A6A4B"/>
+  <ellipse cx="105" cy="300" rx="10" ry="32" fill="#4CAF7D"/>
+  <ellipse cx="85" cy="316" rx="9" ry="26" transform="rotate(-28 85 316)" fill="#6FCF97"/>
+  <ellipse cx="125" cy="316" rx="9" ry="26" transform="rotate(28 125 316)" fill="#6FCF97"/>
+
+  <ellipse cx="388" cy="398" rx="46" ry="10" fill="#DCE6FA"/>
+  <rect x="358" y="330" width="60" height="62" rx="10" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+  <rect x="368" y="290" width="8" height="50" rx="4" transform="rotate(-10 372 315)" fill="#3F63F3"/>
+  <rect x="384" y="284" width="8" height="56" rx="4" fill="#0F172A"/>
+  <rect x="400" y="292" width="8" height="48" rx="4" transform="rotate(12 404 316)" fill="#F4B740"/>
+
+  <ellipse cx="260" cy="404" rx="130" ry="14" fill="#DCE6FA"/>
+
+  <rect x="150" y="336" width="220" height="42" rx="8" fill="#1E3A8A"/>
+  <rect x="150" y="336" width="220" height="9" rx="4" fill="#F5EFE0"/>
+
+  <rect x="165" y="298" width="190" height="40" rx="8" fill="#3F63F3"/>
+  <rect x="165" y="298" width="190" height="9" rx="4" fill="#F5EFE0"/>
+
+  <rect x="180" y="260" width="160" height="40" rx="8" fill="#0F172A"/>
+  <rect x="180" y="260" width="160" height="9" rx="4" fill="#F5EFE0"/>
+
+  <polygon points="292,260 304,260 304,378 298,368 292,378" fill="#F4B740"/>
+
+  <ellipse cx="260" cy="252" rx="50" ry="15" fill="#1E293B"/>
+  <polygon points="260,220 342,247 260,274 178,247" fill="#0F172A"/>
+  <path d="M260,247 C300,255 322,272 316,302" fill="none" stroke="#F4B740" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="316" cy="306" r="7" fill="#F4B740"/>
+  <circle cx="260" cy="247" r="6" fill="#F4B740"/>
+
+</svg>

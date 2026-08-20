@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Professor Login | SparkLearn</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<section class="auth-page">
+
+    <div class="auth-card">
+
+        <a href="index.html" class="auth-logo">
+            <span class="logo-icon"><i class="fa-solid fa-book-open"></i></span>
+            SparkLearn
+        </a>
+
+        <h1>Professor Login</h1>
+        <p class="auth-subtitle">Sign in to manage exams, resources and announcements.</p>
+
+        <form id="login-form" class="form-stack">
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" required placeholder="you@example.com" autocomplete="email">
+            </div>
+
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" required placeholder="••••••••" autocomplete="current-password">
+            </div>
+
+            <p id="auth-error" class="auth-error" hidden></p>
+
+            <button type="submit" class="btn auth-submit">
+                <span class="btn-label">Sign In</span>
+            </button>
+
+        </form>
+
+        <a href="index.html" class="auth-back"><i class="fa-solid fa-arrow-left"></i> Back to SparkLearn</a>
+
+    </div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>
