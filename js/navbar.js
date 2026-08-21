@@ -36,10 +36,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 <ul class="nav-links">${navLinks}</ul>
 
-                <a href="login.html" class="login-btn">
-                    <i class="fa-solid fa-user"></i> <span>Login</span>
-                </a>
+                <div class="nav-actions">
+                    <a href="login.html" class="login-btn">
+                        <i class="fa-solid fa-user"></i> <span>Login</span>
+                    </a>
+
+                    <button type="button" class="nav-toggle" aria-label="Toggle menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
             </nav>
         </div>
     `;
+
+    const toggle = mount.querySelector(".nav-toggle");
+    const navLinksEl = mount.querySelector(".nav-links");
+
+    toggle.addEventListener("click", () => {
+        navLinksEl.classList.toggle("open");
+    });
+
+    navLinksEl.querySelectorAll("a").forEach((a) => {
+        a.addEventListener("click", () => navLinksEl.classList.remove("open"));
+    });
 });

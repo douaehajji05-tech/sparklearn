@@ -66,7 +66,7 @@ button{
 }
 
 .container{
-    width:min(1200px,90%);
+    width:min(1320px,94%);
     margin:auto;
 }
 
@@ -87,16 +87,17 @@ section{
 
     border-bottom:1px solid #E8EDF5;
 
-    padding:18px 0;
+    padding:12px 0;
 
     transition:.3s;
 }
 
 nav{
-    height:80px;
+    height:64px;
     display:flex;
     justify-content:space-between;
     align-items:center;
+    position:relative;
 }
 
 .logo{
@@ -116,10 +117,12 @@ nav{
 .nav-links{
     display:flex;
     list-style:none;
-    gap:35px;
+    gap:20px;
 }
 
 .nav-links a{
+
+    position:relative;
 
     color:#1F2937;
 
@@ -127,7 +130,7 @@ nav{
 
     font-weight:600;
 
-    padding:10px 18px;
+    padding:10px 14px;
 
     border-radius:12px;
 
@@ -195,6 +198,29 @@ nav{
     transform:translateY(-2px);
 }
 
+.nav-actions{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.nav-toggle{
+    display:none;
+    align-items:center;
+    justify-content:center;
+    width:40px;
+    height:40px;
+    background:#F1F4FA;
+    border-radius:10px;
+    font-size:1.1rem;
+    color:var(--text);
+}
+
+.nav-toggle:hover{
+    background:#EEF3FF;
+    color:var(--primary);
+}
+
 /* ===========================
    HERO
 =========================== */
@@ -227,9 +253,9 @@ nav{
 
     background:rgba(63,99,243,.06);
 
-    right:-120px;
+    right:20px;
 
-    top:-80px;
+    top:20px;
 
 }
 
@@ -247,9 +273,9 @@ nav{
 
     background:rgba(63,99,243,.04);
 
-    left:-100px;
+    left:20px;
 
-    bottom:-100px;
+    bottom:20px;
 
 }
 
@@ -736,6 +762,12 @@ nav{
 }/* ===========================
    FILE LISTS
 =========================== */
+
+.file-list-mount{
+    max-height:260px;
+    overflow-y:auto;
+    padding-right:4px;
+}
 
 .file-link{
     display:flex;
@@ -1264,17 +1296,56 @@ RESPONSIVE
         grid-template-columns:1fr 1fr;
     }
 
+    .year-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:25px;
+    }
+
+    .year-card,
+    .year-card:nth-child(4),
+    .year-card:nth-child(5){
+        grid-column:span 1;
+    }
+
 }
 
-@media (max-width:768px){
+@media (max-width:1100px){
+
+    .nav-toggle{
+        display:flex;
+    }
 
     .nav-links{
         display:none;
+        position:absolute;
+        top:calc(100% + 12px);
+        left:0;
+        right:0;
+        flex-direction:column;
+        gap:4px;
+        background:#fff;
+        border:1px solid var(--border);
+        border-radius:16px;
+        padding:14px;
+        box-shadow:0 20px 45px rgba(15,23,42,.12);
+    }
+
+    .nav-links.open{
+        display:flex;
+    }
+
+    .nav-links a{
+        display:block;
+        padding:14px 16px;
     }
 
     .login-btn span{
         display:none;
     }
+
+}
+
+@media (max-width:768px){
 
     .hero h1{
         font-size:2.6rem;
@@ -1299,6 +1370,17 @@ RESPONSIVE
     .footer-grid{
         grid-template-columns:1fr;
         gap:35px;
+    }
+
+    .year-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .year-card,
+    .year-card:nth-child(4),
+    .year-card:nth-child(5){
+        grid-column:span 1;
     }
 
 }
