@@ -2,13 +2,16 @@
 -- Run this once in Supabase: Project > SQL Editor > New query > paste > Run.
 --
 -- Storage: files are stored one bucket per category (exams, resources,
--- scholarships, vocabulary, reports, weekly) rather than a single "uploads"
--- bucket, since those 6 buckets already existed in the project. All 6 need
--- "Public bucket" turned ON (Storage > select bucket > Edit bucket).
+-- scholarships, reports) rather than a single "uploads" bucket, since those
+-- buckets already existed in the project. Each needs "Public bucket" turned
+-- ON (Storage > select bucket > Edit bucket).
+--
+-- The site also has unused "vocabulary" and "weekly" buckets left over from
+-- before those sections were removed — harmless to leave, safe to delete.
 --
 -- Setup checklist (do these in the Supabase dashboard, in this order):
 --   1. Run this whole file in the SQL Editor.
---   2. Storage > for each of exams/resources/scholarships/vocabulary/reports/weekly:
+--   2. Storage > for each of exams/resources/scholarships/reports:
 --      Edit bucket > toggle "Public bucket" ON.
 --   3. Authentication > Providers > Email > turn OFF "Allow new users to sign up"
 --      (there is no signup form on the site — you are the only account).
@@ -23,7 +26,7 @@ create extension if not exists pgcrypto;
 
 create table if not exists public.files (
     id          uuid primary key default gen_random_uuid(),
-    category    text not null check (category in ('exams','resources','scholarships','vocabulary','reports','weekly')),
+    category    text not null check (category in ('exams','resources','scholarships','reports')),
     year        text,
     semester    text,
     title       text not null,
@@ -82,14 +85,14 @@ create policy "Authenticated can delete announcements"
 
 create policy "Public can view uploaded files"
     on storage.objects for select
-    using (bucket_id in ('exams','resources','scholarships','vocabulary','reports','weekly'));
+    using (bucket_id in ('exams','resources','scholarships','reports'));
 
 create policy "Authenticated can upload files"
     on storage.objects for insert
     to authenticated
-    with check (bucket_id in ('exams','resources','scholarships','vocabulary','reports','weekly'));
+    with check (bucket_id in ('exams','resources','scholarships','reports'));
 
 create policy "Authenticated can delete uploaded files"
     on storage.objects for delete
     to authenticated
-    using (bucket_id in ('exams','resources','scholarships','vocabulary','reports','weekly'));
+    using (bucket_id in ('exams','resources','scholarships','reports'));

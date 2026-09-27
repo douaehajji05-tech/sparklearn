@@ -9,9 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { href: "exams.html", label: "Exams" },
         { href: "resources.html", label: "Resources" },
         { href: "scholarships.html", label: "Scholarships" },
-        { href: "vocabulary.html", label: "Vocabulary" },
         { href: "reports.html", label: "Reports" },
-        { href: "weekly.html", label: "Weekly" },
     ];
 
     const navLinks = links

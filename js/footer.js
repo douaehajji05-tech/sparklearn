@@ -24,12 +24,10 @@ document.addEventListener("DOMContentLoaded", () => {
                         <ul class="footer-links">
                             <li><a href="exams.html"><i class="fa-solid fa-arrow-right"></i> Exams</a></li>
                             <li><a href="resources.html"><i class="fa-solid fa-arrow-right"></i> Resources</a></li>
-                            <li><a href="scholarships.html"><i class="fa-solid fa-arrow-right"></i> Scholarships</a></li>
                         </ul>
                         <ul class="footer-links">
-                            <li><a href="vocabulary.html"><i class="fa-solid fa-arrow-right"></i> Vocabulary</a></li>
+                            <li><a href="scholarships.html"><i class="fa-solid fa-arrow-right"></i> Scholarships</a></li>
                             <li><a href="reports.html"><i class="fa-solid fa-arrow-right"></i> Reports</a></li>
-                            <li><a href="weekly.html"><i class="fa-solid fa-arrow-right"></i> Weekly Exercises</a></li>
                         </ul>
                     </div>
                 </div>
